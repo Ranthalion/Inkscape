@@ -28,12 +28,7 @@
 		<_item value="#000000">Black</_item>
 	</param>
 	
-	<param name="resolution" type="enum" gui-text="Resolution">
-		<_item value="1">1 pixel/mm</_item>
-		<_item value="2">2 pixel/mm</_item>
-		<_item value="5">5 pixel/mm</_item>
-		<_item value="10">10 pixel/mm</_item>
-	</param>
+	<param name="resolution" type="int" min="10" max="1000" gui-text="Laser Dots per inch"></param>
 		
 	<!-- Come convertire in scala di grigi -->
 	<param name="grayscale_type" type="enum" gui-text="Color to Grayscale conversion">
@@ -45,6 +40,9 @@
 		<_item value="6">Max Color</_item>
 		<_item value="7">Min Color</_item>
 	</param>
+	
+	<param name="laser_on" type="string" gui-text="Laser On Command">E1P1</param>
+	<param name="laser_off" type="string" gui-text="Laser Off Command">E1P0</param>
 	
 	<!-- Modalità di conversione in Bianco e Nero -->
 	<param name="conversion_type" type="enum" gui-text="B/W conversion algorithm ">

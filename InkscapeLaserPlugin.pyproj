@@ -23,6 +23,9 @@
     <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GCodeGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="png.py" />
     <Compile Include="raster2laser_gcode.py" />
   </ItemGroup>
